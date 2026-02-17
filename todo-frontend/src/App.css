@@ -1,0 +1,101 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+}
+
+/* Center the whole app */
+div[style] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px !important;
+  min-height: 100vh;
+}
+
+/* Card container */
+div[style] > h2,
+div[style] > input,
+div[style] > button,
+div[style] > ul {
+  width: 400px;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Add Button */
+button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #2e59d9;
+  color: white;
+  transition: 0.2s ease;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #224abe;
+}
+
+/* Todo list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Each todo item */
+li {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Completed style */
+li span {
+  font-weight: 500;
+}
+
+/* Buttons inside list */
+li button {
+  margin-left: 8px;
+  background-color: #858796;
+}
+
+li button:hover {
+  background-color: #6c757d;
+}
+
+/* Delete button */
+li button:last-child {
+  background-color: #e74a3b;
+}
+
+li button:last-child:hover {
+  background-color: #c0392b;
+}
